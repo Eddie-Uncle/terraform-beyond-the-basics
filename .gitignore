@@ -1,3 +1,4 @@
+#default for terraform
 */vault-certs/*
 */terraform.tfstate*
 */.terraform/*
