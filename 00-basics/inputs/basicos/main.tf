@@ -1,33 +1,38 @@
-// variable <name>
-variable "pais" {
-  type        = string
-  default     = "Brasil"
-  description = "Em qual país você está?"
+// Define a variable "country" of type string with a default value of "Poland"
+variable "country" {
+    type        = string
+    default     = "Poland"
+    description = "Which country you are living?"
 }
 
-variable "idade" {
-  type        = number
-  description = "Qual é a sua idade?"
+// Define a variable "age" of type number
+variable "age" {
+    type        = number
+    description = "What is your age?"
 }
 
-variable "vai_corinthians" {
-  type        = bool
-  default     = false
-  description = "Vai Corinthians?"
+// Define a variable "go_santos" of type bool with a default value of false
+variable "go_santos" {
+    type        = bool
+    default     = false
+    description = "Do you like Santos?"
 }
 
-// output <name>
-output "pais" {
-  value       = var.pais
-  description = "Seu país"
+//outputs <name?
+// Define an output "country" that displays the value of the variable "country"
+output "country" {
+    value       = var.country
+    description = "The country you are living"
 }
 
-output "idade" {
-  value       = var.idade
-  description = "Sua idade"
+// Define an output "age" that displays the value of the variable "age"
+output "age" {
+    value       = var.age
+    description = "Your age"
 }
 
-output "vai_corinthians" {
-  value       = var.vai_corinthians
-  description = "Se é Corinthiano ou não"
+// Define an output "go_santos" that displays the value of the variable "go_santos"
+output "go_santos" {
+    value       = var.go_santos
+    description = "Do you like Santos?"
 }
